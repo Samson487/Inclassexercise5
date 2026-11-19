@@ -32,7 +32,7 @@ Scope:
   top level.
 - Do not add pandas, matplotlib, numpy, or other libraries.
 """
-pip install -r requirements.txt
+
 import streamlit as st
 
 # ---------------------------------------------------------------------------
