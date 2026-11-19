@@ -10,7 +10,7 @@ Environment: VS Code / local Python
 Student information (fill in):
 Name: Chan Chun Hei
 Student ID: 21057850
-Email: _____________________________
+Email: chchanew@connect.ust.hk
 
 How to use:
 1. Fill in your name / ID / email above.
@@ -60,11 +60,11 @@ sales_target = st.number_input("Enter Monthly Sales Target (in USD):", min_value
 region = st.selectbox("Select Region:", ["North", "South", "East", "West"])  # hint: st.selectbox("...")
 
 # Blank F: Submit button, then show the entered values and a success message (match the screenshot).
-if ______:  # hint: st.button("...")
-    ______  # hint: st.write("...")  — sales target, include a $
-    ______  # hint: st.write("...")  — region selected
-    ______  # hint: st.success("...")
+if if st.button("Submit"):  # hint: st.button("...")
+    st.write(f"Sales Target: ${sales_target}")  # hint: st.write("...")  — sales target, include a $
+    st.write(f"Region Selected: {region}")  # hint: st.write("...")  — region selected
+    st.success("Dashboard updated successfully!")  # hint: st.success("...")
 
     # Challenge: if the sales target is greater than 100000, show an extra message (match the screenshot).
-    if ______:  # hint: compare sales_target with 100000
-        ______  # hint: st.write("...")
+    if sales_target > 100000:  # hint: compare sales_target with 100000
+        st.write("Great! You have set an ambitious target!")  # hint: st.write("...")
