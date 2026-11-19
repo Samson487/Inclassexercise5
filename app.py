@@ -60,7 +60,7 @@ sales_target = st.number_input("Enter Monthly Sales Target (in USD):", min_value
 region = st.selectbox("Select Region:", ["North", "South", "East", "West"])  # hint: st.selectbox("...")
 
 # Blank F: Submit button, then show the entered values and a success message (match the screenshot).
-if if st.button("Submit"):  # hint: st.button("...")
+if st.button("Submit"):  # hint: st.button("...")
     st.write(f"Sales Target: ${sales_target}")  # hint: st.write("...")  — sales target, include a $
     st.write(f"Region Selected: {region}")  # hint: st.write("...")  — region selected
     st.success("Dashboard updated successfully!")  # hint: st.success("...")
